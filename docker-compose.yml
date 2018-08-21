@@ -1,0 +1,6 @@
+web:
+  image: griffin-nginx-rp
+  ports:
+    - "8080:80"
+    - "443:80"
+  command: [nginx-debug, '-g', 'daemon off;']
